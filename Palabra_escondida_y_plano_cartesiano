@@ -1,0 +1,55 @@
+#PROYECTO 1
+
+#Solicitar al usuario que escriba una palabra para ganar un premio.
+print("Hola, debes de escribir una palabra de cierta cantidad de letras. \
+¿Estás listo para intentarlo? :D")
+
+#Agregue un ciclo while para que el programa siga preguntando hasta que lo logre.
+while True:
+    palabra = input("Escribe una palabra: ")
+#Se debe de medir cuantas letras se escribieron
+    cantidad = len(palabra)
+#Se escribe if, para medir el rango de entre 4 y 8 letras
+    if 4 <= cantidad <= 8:
+        print("¡Felicidades!🥳 El mensaje es correcto.")
+        break
+#Si es mayor a 8 letras se imprime...
+    elif cantidad >8:
+        print(f"Sobran letras. Tu palabra tiene {cantidad} letras, intenta nuevamente.")
+#Si es menor a 4 letras se imprime...
+    elif cantidad < 4:
+        print(f"Hacen falta letras. Tu palabra solo tiene {cantidad} letras, intenta nuevamente. \
+Vuelve a intentarlo.")
+
+
+###############################################################################################
+
+
+#PROYECTO 2
+#Imprimir la bienvenida.
+print("Hola, con este programa te ayudaré a encontrar en que cuadrante de una plano cartesiano \
+se encuentran los digitos que escribas.")
+#Aplicar un ciclo while en caso de escribir dos coordenadas 0
+while True:
+    x = int(input("Escribe la coordenada X: "))
+    y = int(input("Escribe la coordenada Y: "))
+#Detecta cuando las dos coordenadas son 0
+    if x == 0 and y == 0:
+            print("Tu coordenada esta en el origen, intenta nuevamente.")
+            break
+#Detecta cuando "X" es positivo y "Y" positivo
+    elif x > 0 and y > 0:
+            print(f"El valor de {x} es positivo y el valor de {y} tambien, por lo que se encuentran en el cuadrante 1.")
+            break
+#Detecta cuando "X" es negativo y "Y" negativo
+    elif x < 0 and y < 0:
+            print(f"El valor de {x} es negativo y el valor de {y} tambien, por lo que se encuentran en el cuadrante 3.")
+            break
+    #Detecta cuando "X" es negativo y "Y" positivo
+    elif x < 0 and y > 0:
+            print(f"El valor de {x} es negativo y el valor de {y} es positivo, por lo que se encuentran en el cuadrante 2.")
+            break
+    #Detecta cuando "X" es positivo y "Y" negativo
+    elif x > 0 and y < 0:
+            print(f"El valor de {x} es positivo y el valor de {y} es negativo, por lo que se encuentran en el cuadrante 4.")
+            break
