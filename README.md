@@ -17,10 +17,10 @@
 
 <p>Ingrese X: 4
 <p>Ingrese Y: -5</p>
-<li>El punto se encuentra en el cuadrante IV.</li>
+<p>El punto se encuentra en el cuadrante IV.</p>
 
-<li>Sigue las indicaciones para ingresar datos.</li>
-<li>Observa los resultados proporcionados por el programa.</li>
+<ol>Sigue las indicaciones para ingresar datos.</ol>
+<ol>Observa los resultados proporcionados por el programa.</ol>
 
 <h1>Construido con:</h1>
 <p>Python</p>
